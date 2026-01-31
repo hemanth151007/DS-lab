@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a,b;
+	char op;
+	cout<<"enter a,b values";
+	cin>>a>>b;
+	cout<<"enter operator";
+	cin>>op;
+	switch(op)
+	{
+		case '+': cout<<"addition: "<<a+b;
+	              break;
+		case '-': cout<<"substraction: "<<a-b;
+		          break;
+		case '*': cout<<"multiplcation: "<<a*b;
+		          break;
+		case '/':
+		if(b==0)
+		cout<<"division not possible";
+		else
+		cout<<"division"<<a/b;
+		break;
+		default: cout<<"invalid operator";	
+	
+	}
+}
